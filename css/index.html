@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>NellieStyles.Designs</title>
+    <link rel="stylesheet" href="./css/styles.css"> 
+    <script src="js/jquery-3.7.1.min.js"></script> 
+    <script>
+        $(document).ready(function(){
+            $("h1").css("color", "#b78456");
+        });
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("p").text("Hello World!");
+            });            
+        });
+    </script> 
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/YimhDRXUFB8?si=0lWt6tPt1RliE28H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </head>
+    <body>
+        <p>Not loaded yet.</p>
+    <button type="button">Replace Text</button>
+        <header>
+            <a href= "index.html" class="logo">NellieStylesDesigns</a>
+
+            <nav>
+                <a href="index.html" Class="active">Home</a>
+                <a href="about.html">About</a>
+                <a href="#">Services</a>
+                <a href="#">Works</a>
+                <a href="contact.html">Contact</a>
+                <a href="#">FAQ</a>
+            </nav>
+        </header>
+
+        <div class="container">
+            <form>
+                <h1>Contact Me Form</h1>
+                <input type="text" id="firstName" placeholder="firstName" required>
+                <input type="text" id="lastName" placeholder="lastName" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="text" id="mobile" placeholder="Mobile" required>
+                <h4>Type your request here...</h4>
+                <textarea required></textarea>
+                <input type="submit" value="Send" id="button">
+            </form>
+        </div>
